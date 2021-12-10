@@ -17,6 +17,7 @@ mongoose.connect(process.env.MONGO_URI || 'mongodb://localhost/workout', {
 
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
+
 app.use(express.static("public"));
 app.use(require("./routes/views"))
 app.use(require("./routes/twerkout"))
