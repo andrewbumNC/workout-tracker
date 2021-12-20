@@ -13,6 +13,7 @@ mongoose.connect(process.env.MONGO_URI || 'mongodb://localhost/workout', {
   useNewUrlParser: true,
   useFindAndModify: false,
   useUnifiedTopology: true,
+  useCreateIndex: true,
 })
 
 app.use(express.urlencoded({ extended: true }));
