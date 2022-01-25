@@ -1,4 +1,3 @@
-/* eslint-disable no-restricted-globals */
 const API = {
   async getLastWorkout() {
     let res;
